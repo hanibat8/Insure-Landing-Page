@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: none;
+}
+
+.mobile-nav {
+    background-color: #000;
+    height: 93vh;
+    position: absolute;
+    top: 4.8rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.mobile-links-list {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 2rem;
+    transition: all 0.2s;
+}
+
+.mobile-links-list .link {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.mobile-links-list .link:not(:last-of-type) {
+    margin-bottom: 5rem;
+}
+
+.mobile-links-list .link:hover {
+    border: 1px solid #fff;
+}
+.intro-pic {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.intro-details-container {
+    margin-top: 0;
+    background-color: rgb(39, 52, 85);
+    background-image: url(images/bg-pattern-intro-left-mobile.svg), url(images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0, right bottom -18rem;
+}
+
+.intro-details,
+.work {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.intro-heading,
+.work-heading {
+    font-size: 3.3rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.para {
+    font-size: 1.5rem;
+    color: rgb(219, 219, 219);
+}
+
+.btn {
+    margin-top: 2rem;
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: rgb(39, 52, 85);
+}
+
+.horizontal,
+.footer-horizontal {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.footer-horizontal {
+    margin-bottom: 0;
+    margin-top: 3rem;
+    width: 80%;
+}
+
+.features {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.feature-heading {
+    font-size: 3.3rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    padding: 3rem 0;
+}
+
+.feature .para {
+    color: rgb(150, 150, 150);
+}
+
+.feature-secondary-heading {
+    font-size: 2.2rem;
+    margin: 1rem 0;
+}
+
+.work {
+    margin-top: 0;
+    background-color: rgb(39, 52, 85);
+    background-image: url(images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.footer {
+    margin-top: 8rem;
+    background-color: rgb(243, 243, 243);
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-heading {
+    margin-top: 3rem;
+}
+
+.footer-heading .logo {
+    margin-bottom: 2rem;
+}
+
+.icons {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon {
+    transition: all 0.2s;
+}
+
+.icon:hover {
+    background-color: rgb(39, 52, 85);
+}
+
+.detail {
+    margin: 3rem 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.detail-heading {
+    color: rgb(160, 160, 160);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.detail-link:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 1000px) {
+    .container,
+    .footer-container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: block;
+    }
+
+    .links-list {
+        display: flex;
+    }
+
+    .link {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        color: rgb(117, 117, 117);
+        padding: 1rem;
+        transition: all 0.2s;
+    }
+
+    .link:hover {
+        color: #fff;
+        background-color: rgb(39, 52, 85);
+    }
+
+    .link:not(:last-of-type) {
+        margin-right: 1.3rem;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .intro-details-container {
+        background-image: none;
+        background-color: initial;
+        flex-basis: 47%;
+    }
+
+    .intro-details {
+        text-align: start;
+        order: 1;
+    }
+
+    .intro-details.container {
+        width: 100%;
+    }
+
+    .intro {
+        padding: 10rem 0;
+        background-color: rgb(39, 52, 85);
+        background-image: url(images/bg-pattern-intro-left-desktop.svg), url(images/bg-pattern-intro-right-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: 0 35rem, right bottom;
+        position: relative;
+    }
+
+    .intro-desk-container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .intro-pic-container {
+        position: absolute;
+        right: 13rem;
+        margin-left: 2rem;
+        order: 2;
+    }
+
+    .intro-heading {
+        font-size: 6rem;
+    }
+
+    .features {
+        margin-top: 22rem;
+        text-align: start;
+    }
+
+    .horizontal {
+        width: 10%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .feature-heading {
+        font-size: 4rem;
+    }
+
+    .features-container {
+        margin-top: 4rem;
+        display: flex;
+    }
+
+    .feature:not(:last-of-type) {
+        margin-right: 5rem;
+    }
+
+    .work {
+        display: flex;
+        align-items: flex-start;
+        padding: 7rem 0;
+    }
+    .work-heading {
+        font-size: 5.2rem;
+        margin-left: 5rem;
+        margin-right: auto;
+        width: 50%;
+        text-align: start;
+    }
+
+    .work-btn {
+        margin-right: 10rem;
+    }
+
+    .footer-head-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icons {
+        margin: 0;
+        display: flex;
+        align-self: start;
+        justify-content: initial;
+        margin-top: 3rem;
+    }
+
+    .icon:first-of-type {
+        margin-left: auto;
+    }
+
+    .icon:not(:last-of-type) {
+        margin-right: 2rem;
+    }
+
+    .footer {
+        text-align: start;
+    }
+
+    .footer-details {
+        display: flex;
+    }
+
+    .detail {
+        flex: 1;
+    }
+
+    .container.footer-details-container {
+        width: 100%;
+    }
+}
