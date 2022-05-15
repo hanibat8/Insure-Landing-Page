@@ -1,3 +1,4 @@
+URL - https://6280d1e7e789641c19e17c9c--friendly-beijinho-b5821f.netlify.app/
 # Frontend Mentor - Insure landing page
 
 ![Design preview for the Insure landing page coding challenge](./design/desktop-preview.jpg)
